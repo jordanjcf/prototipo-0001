@@ -165,6 +165,7 @@ scale = Vector2(0.14306644, 0.14306644)
 sprite_frames = SubResource("SpriteFrames_2tk64")
 animation = &"caminar"
 autoplay = "descanso"
+frame_progress = 0.95479625
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1861208809]
 zoom = Vector2(4, 4)
