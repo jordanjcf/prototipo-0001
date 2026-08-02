@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://cxung44nnm8o4"]
+
+[ext_resource type="Texture2D" uid="uid://gpengkwcf18g" path="res://Assets/Assets_City.png" id="1_qa651"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7yn8b"]
+atlas = ExtResource("1_qa651")
+region = Rect2(160, 96, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_etk83"]
+atlas = ExtResource("1_qa651")
+region = Rect2(176, 96, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qumfl"]
+atlas = ExtResource("1_qa651")
+region = Rect2(192, 96, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r08cw"]
+atlas = ExtResource("1_qa651")
+region = Rect2(208, 96, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_klpuh"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7yn8b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_etk83")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qumfl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r08cw")
+}],
+"loop": 1,
+"name": &"Cascada",
+"speed": 5.0
+}]
+
+[node name="Agua" type="AnimatedSprite2D" unique_id=966390543]
+z_index = -1
+sprite_frames = SubResource("SpriteFrames_klpuh")
+animation = &"Cascada"
