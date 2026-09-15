@@ -1,6 +1,7 @@
 [gd_scene format=4 uid="uid://djgthjgk8vbdj"]
 
 [ext_resource type="Texture2D" uid="uid://cqace8vylevmv" path="res://Assets/TileSet_Wasteland.png" id="1_d6tm4"]
+[ext_resource type="PackedScene" uid="uid://b13ogk115g00o" path="res://Scenes/Player.tscn" id="2_3fhwg"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3fhwg"]
 texture = ExtResource("1_d6tm4")
@@ -86,3 +87,6 @@ tile_map_data = PackedByteArray("AAAEAAoAAQAKAAIAAAAFAAoAAQAJAAEAAAAGAAoAAQAJAAE
 tile_set = SubResource("TileSet_klpuh")
 
 [node name="Fondo" type="TileMapLayer" parent="." unique_id=1192755686]
+
+[node name="Player" parent="." unique_id=1308787599 instance=ExtResource("2_3fhwg")]
+position = Vector2(34, 96)
