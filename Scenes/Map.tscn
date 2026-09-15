@@ -1,7 +1,6 @@
 [gd_scene format=4 uid="uid://ik71npe5cqfo"]
 
 [ext_resource type="Texture2D" uid="uid://gpengkwcf18g" path="res://Assets/Assets_City.png" id="1_s486e"]
-[ext_resource type="PackedScene" uid="uid://b13ogk115g00o" path="res://Scenes/Player.tscn" id="2_7yn8b"]
 [ext_resource type="PackedScene" uid="uid://cxung44nnm8o4" path="res://Scenes/Cascada.tscn" id="3_etk83"]
 [ext_resource type="PackedScene" uid="uid://tyxbbkirj1bb" path="res://Scenes/salida.tscn" id="4_qumfl"]
 [ext_resource type="Script" uid="uid://dw7evq2tx35ow" path="res://Script/salida.gd" id="5_r08cw"]
@@ -643,9 +642,6 @@ tile_set = SubResource("TileSet_7lx0k")
 [node name="Flotantes" type="TileMapLayer" parent="." unique_id=2046734795]
 tile_map_data = PackedByteArray("AAArAAcAAAAIAAwAAAArAAgAAAAIAA0AAAAsAAYAAAAIAAwAAAAsAAcAAAAIAA0AAAAtAAUAAAAIAAwAAAAtAAYAAAAIAA0AAAAuAAQAAAAIAAwAAAAuAAUAAAAIAA0AAAAvAAMAAAAIAAwAAAAvAAQAAAAIAA0AAAAwAAMAAAAGAAsAAAAxAAMAAAAHAAsAAAAyAAMAAAAIAAsAAAAzAAMAAAAJAAsAAAA0AAMAAAAGAAsAAAA1AAMAAAAHAAsAAAA2AAMAAAAIAAsAAAA3AAMAAAAJAAsAAAAzAAAAAAAHAAwAAAAzAAEAAAAHAA0AAAAyAP//AAAHAAwAAAAyAAAAAAAHAA0AAAAxAP7/AAAHAAwAAAAxAP//AAAHAA0AAAAtAP7/AAAGAAsAAAAuAP7/AAAHAAsAAAAvAP7/AAAIAAsAAAAwAP7/AAAJAAsAAAApAP7/AAAGAAsAAAAqAP7/AAAHAAsAAAArAP7/AAAIAAsAAAAsAP7/AAAJAAsAAAA=")
 tile_set = SubResource("TileSet_5t7yc")
-
-[node name="Player" parent="." unique_id=1308787599 groups=["Jugadores"] instance=ExtResource("2_7yn8b")]
-position = Vector2(131, 25)
 
 [node name="Agua" parent="." unique_id=966390543 instance=ExtResource("3_etk83")]
 position = Vector2(720, 195)
