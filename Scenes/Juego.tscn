@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://ccc0otcmq4h6u"]
+
+[ext_resource type="PackedScene" uid="uid://ik71npe5cqfo" path="res://Scenes/Map.tscn" id="1_ceydv"]
+[ext_resource type="Script" uid="uid://vtj6aufsg0cy" path="res://Scenes/juego.gd" id="1_y2452"]
+[ext_resource type="PackedScene" uid="uid://b13ogk115g00o" path="res://Scenes/Player.tscn" id="2_bdrfq"]
+[ext_resource type="PackedScene" uid="uid://d36ej0gswp42m" path="res://Scenes/PlayerB.tscn" id="3_godn0"]
+
+[node name="Juego" type="Node" unique_id=2022611710]
+script = ExtResource("1_y2452")
+
+[node name="Nivel" type="Node2D" parent="." unique_id=2059497982]
+
+[node name="Map" parent="Nivel" unique_id=1470939187 instance=ExtResource("1_ceydv")]
+
+[node name="MenuJugador" type="CanvasLayer" parent="." unique_id=779951594]
+
+[node name="Panel" type="Control" parent="MenuJugador" unique_id=721722026]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 50.0
+offset_top = 50.0
+offset_right = 153.0
+offset_bottom = 130.0
+
+[node name="Opciones" type="VBoxContainer" parent="MenuJugador/Panel" unique_id=1590650682]
+layout_mode = 0
+offset_right = 81.0
+offset_bottom = 66.0
+
+[node name="BotonPlayer" type="Button" parent="MenuJugador/Panel/Opciones" unique_id=347141141]
+visible = false
+layout_mode = 2
+focus_mode = 0
+text = "PLAYER"
+
+[node name="BotonPlayerB" type="Button" parent="MenuJugador/Panel/Opciones" unique_id=1627137337]
+layout_mode = 2
+focus_mode = 0
+text = "PLAYER B"
+
+[node name="Jugador" type="Node2D" parent="." unique_id=1985952323]
+
+[node name="Player" parent="Jugador" unique_id=1308787599 instance=ExtResource("2_bdrfq")]
+position = Vector2(156, 25)
+
+[node name="PlayerB" parent="Jugador" unique_id=1148946810 instance=ExtResource("3_godn0")]
+process_mode = 4
+visible = false
+position = Vector2(156, 25)
+
+[connection signal="pressed" from="MenuJugador/Panel/Opciones/BotonPlayer" to="." method="_on_boton_player_pressed"]
+[connection signal="pressed" from="MenuJugador/Panel/Opciones/BotonPlayerB" to="." method="_on_boton_player_b_pressed"]
